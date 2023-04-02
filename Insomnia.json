@@ -1,0 +1,88 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2023-04-02T13:58:03.748Z",
+  "__export_source": "insomnia.desktop.app:v2022.6.0",
+  "resources": [
+    {
+      "_id": "req_efb5f0a9a16c423c88ed1d3d54f40dd2",
+      "parentId": "fld_c7eea67b0e70414582d538802504af00",
+      "modified": 1680443462891,
+      "created": 1680441897153,
+      "url": "{{ _.base_url }}/users",
+      "name": "create",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Daniel Souza\",\n\t\"email\": \"daniel@test.com\",\n\t\"password\": \"123456\"\n}"
+      },
+      "parameters": [],
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "authentication": {},
+      "metaSortKey": -1680442615666,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_c7eea67b0e70414582d538802504af00",
+      "parentId": "wrk_1a83298b8558494ea4d4fa3b7af15778",
+      "modified": 1680443334179,
+      "created": 1680443334179,
+      "name": "User",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1680443334179,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_1a83298b8558494ea4d4fa3b7af15778",
+      "parentId": null,
+      "modified": 1680443381575,
+      "created": 1680441893776,
+      "name": "solid-api-doc",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "env_7d580b62533b74314fa81b2bbf7d1156935b6f1c",
+      "parentId": "wrk_1a83298b8558494ea4d4fa3b7af15778",
+      "modified": 1680441946716,
+      "created": 1680441893793,
+      "name": "Base Environment",
+      "data": { "base_url": "http://localhost:3333" },
+      "dataPropertyOrder": { "&": ["base_url"] },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1680441893793,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_7d580b62533b74314fa81b2bbf7d1156935b6f1c",
+      "parentId": "wrk_1a83298b8558494ea4d4fa3b7af15778",
+      "modified": 1680441893795,
+      "created": 1680441893795,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_fa449f7437644c3dbabf7e8c4d149f6d",
+      "parentId": "wrk_1a83298b8558494ea4d4fa3b7af15778",
+      "modified": 1680441893785,
+      "created": 1680441893785,
+      "fileName": "Solid api",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    }
+  ]
+}
